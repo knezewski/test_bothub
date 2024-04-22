@@ -1,0 +1,11 @@
+.DS_Store
+.idea
+.vscode
+node_modules
+dist/
+!libs/**/dist
+data/logs
+data/mock/.~lock*
+# Optional eslint cache
+.eslintcache
+.env
