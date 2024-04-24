@@ -2,7 +2,7 @@
   "name": "server",
   "version": "1.0.0",
   "main": "app.ts",
-"scripts": {
+  "scripts": {
     "lint": "eslint \"src/**/*.{ts,js}\" --cache",
     "lint:fix": "eslint \"src/**/*.{ts,js}\" --fix",
     "prettier": "npx prettier \"src/**/*.{ts,js}\" --check",
@@ -17,7 +17,9 @@
   "keywords": [],
   "description": "",
   "dependencies": {
+    "@types/cors": "^2.8.17",
     "@typescript-eslint/utils": "^7.7.0",
+    "cors": "^2.8.5",
     "express": "^4.19.2",
     "zod": "^3.22.4"
   },

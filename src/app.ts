@@ -1,10 +1,12 @@
 import express from 'express'
 import cron from 'node-cron'
+import cors from 'cors'
 import metadataModelRouter from './modules/metadataModel/metadataModel.router'
 import { fetchDataAndUpdateDatabase } from './services/fetchDataAndUpdateDatabase'
 import { BASE_URL } from './utils/constants'
 
 const app = express()
+app.use(cors())
 const PORT = process.env.PORT || 3000
 
 cron.schedule('0 0 * * *', fetchDataAndUpdateDatabase)
